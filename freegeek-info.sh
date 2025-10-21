@@ -309,7 +309,7 @@ standard2=$(lsusb | grep -io '802.11[a-z0-9]*')
 if [[ -n "$wifi" ]] || [[ -n "$wifi2" ]]; then
     echo -e "${BOLD}WiFi:${RESET} Yes"
     if [[ -n "$standard" ]]; then
-        echo "${BOLD}WiFi Standard:${RESET} $standard"
+        echo -e "${BOLD}WiFi Standard:${RESET} $standard"
     elif [[ -n "$standard2" ]]; then
         echo -e "${BOLD}WiFi Standard:${RESET} $standard2"
     else
